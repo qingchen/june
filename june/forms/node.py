@@ -1,6 +1,6 @@
 # coding: utf-8
 
-from flask.ext.wtf import TextField, TextAreaField, SelectField
+from flask.ext.wtf import TextField, TextAreaField, SelectField, BooleanField
 from flask.ext.wtf import DataRequired
 from flask.ext.babel import lazy_gettext as _
 
@@ -27,6 +27,7 @@ class NodeForm(BaseForm):
         ],
         default='user',
     )
+    scream = BooleanField(_('Scream'), default=False)
 
     def validate_urlname(self, field):
         if self._obj and self._obj.urlname == field.data:

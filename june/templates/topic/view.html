@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="module hentry">
+<div class="module hentry {{' scream' if node.scream else ''}}">
   <div class="module-header inner">
     <h1>{{topic}}</h1>
   </div>

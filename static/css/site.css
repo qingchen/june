@@ -319,3 +319,12 @@ textarea.input-block-level {
     padding: 0 20px;
   }
 }
+@font-face {
+  font-family: FZNHT;
+  src: local(FZNHT), url('FZNHT.TTF') format('opentype');
+}
+
+.scream{
+  font-family:"FZNHT";
+}
+

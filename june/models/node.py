@@ -26,6 +26,7 @@ class Node(db.Model, SessionMixin):
         onupdate=datetime.utcnow,
         index=True,
     )
+    scream = db.Column(db.Boolean, default=False)
 
     def __str__(self):
         return self.title
